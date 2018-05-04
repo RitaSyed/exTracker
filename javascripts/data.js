@@ -4,14 +4,14 @@ const dom = require('./dom.js');
 
 const whenLocationsLoad = (data) => {
   loadEx(whenExLoad, errorFunction);
+  const locationsData = data.locations;
+  dom.printLocations(locationsData);
+  console.log('locationsdata', locationsData);
 };
 
 const whenExLoad = (data) => {
-  console.log('exload', data);
   const exData = data.ex;
-  console.log('exData', exData);
   dom.printEx(exData);
-
 };
 
 const errorFunction = () => {

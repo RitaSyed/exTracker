@@ -1,7 +1,14 @@
 body {
   background-color: brown;
+  padding-top: 80px;
 }
 
-.margin {
-  margin-bottom: 70px;
+
+#ex-card {
+  position: fixed;
+  z-index: 1;
+}
+
+.thumbnail {
+  min-height: 380px;
 }
