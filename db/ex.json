@@ -1,9 +1,8 @@
 {
-  "ex": [
-      {   "imageSoure": "",
+  "ex":
+      {   "image": "http://img.picturequotes.com/2/616/615489/this-is-my-ex-looking-for-someone-better-than-me-quote-1.jpg",
           "name": "Fictional Ex",
           "age": 33,
           "flaws": ["Arrogant", "Blunt", "Dishonest", "Humourless", "Judgemental", "Naïve"]
       }
-  ]
 }
