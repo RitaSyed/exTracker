@@ -1,0 +1,9 @@
+{
+  "ex": [
+      {   "imageSoure": "",
+          "name": "Fictional Ex",
+          "age": 33,
+          "flaws": ["Arrogant", "Blunt", "Dishonest", "Humourless", "Judgemental", "Naïve"]
+      }
+  ]
+}

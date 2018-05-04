@@ -1,0 +1,76 @@
+{
+  "locations": [
+      {
+          "name": "Whole Foods Market",
+          "locationImg": "/imgs/Whole.jpg",
+          "locationAddress": ["4021 Hillsboro Pike, Nashville, TN 37215"],
+          "time": "Morning"
+      },
+      {
+          "name": "ALDI",
+          "locationImg": "/imgs/ALDI.jpg",
+          "locationAddress": ["315 N Mt Juliet Rd, Mt Juliet, TN 37122"],
+          "time": "Afternoon"
+      },
+      {
+          "name": "Printers Alley",
+          "locationImg": "/imgs/Printers.jpg",
+          "locationAddress": ["Printers Alley, Nashville, TN 37201"],
+          "time": "Evening"
+      },
+      {
+          "name": "Ryman Auditorium",
+          "locationImg": "/imgs/Ryman.jpg",
+          "locationAddress": ["116 5th Ave N, Nashville, TN 37219"],
+          "time": "After Dark"
+      },
+       {
+          "name": "Kroger",
+          "locationImg": "/imgs/Kroger.jpg",
+          "locationAddress": ["401 S Mt Juliet Rd Ste 200, Mt Juliet, TN 37122"],
+          "time": "Morning"
+      },
+      {
+          "name": "Anytime Fitness",
+          "locationImg": "imgs/Anytime.jpg",
+          "locationAddress": ["645 S Mt Juliet Rd, Mt Juliet, TN 371222"],
+          "time": "Afternoon"
+      },
+      {
+          "name": "The Loveless Café",
+          "locationImg": "/imgs/Loveless.jpg",
+          "locationAddress": ["8400 TN-100, Nashville, TN 37221"],
+          "time": "Evening"
+      },
+      {
+          "name": "Sonic Drive-In",
+          "locationImg": "/imgs/Sonic.jpg",
+          "locationAddress": ["713 S Mt Juliet Rd, Mt Juliet, TN 37122"],
+          "time": "After Dark"
+      },
+       {
+          "name": "Publix",
+          "locationImg": "/imgs/Publix.jpg",
+          "locationAddress": ["4324 Harding Pike, Nashville, TN 37205"],
+          "time": "Morning"
+      },
+      {
+          "name": "Country Music Hall of Fame",
+          "locationImg": "/imgs/Country.jpg",
+          "locationAddress": ["222 5th Ave S, Nashville, TN 37203"],
+          "time": "Afternoon"
+      },
+      {
+          "name": "CrossFit Hermitage",
+          "locationImg": "/imgs/CrossFit.jpg",
+          "locationAddress": ["3522 Central Pike #205, Hermitage, TN 370763"],
+          "time": "Evening"
+      },
+      {
+          "name": "Tootsie’s Orchid Lounge",
+          "locationImg": "/imgs/Tootsie.jpg",
+          "locationAddress": ["422 Broadway, Nashville, TN 37203"],
+          "time": "After Dark"
+      }
+  ]
+}
