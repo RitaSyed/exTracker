@@ -1,9 +1,8 @@
 {
-  "ex": [
-      {   "imageSoure": "",
+  "ex":
+      {   "image": "http://lefunny.net/wp-content/uploads/2013/04/Taking-back-your-ex.png",
           "name": "Fictional Ex",
           "age": 33,
           "flaws": ["Arrogant", "Blunt", "Dishonest", "Humourless", "Judgemental", "Naïve"]
       }
-  ]
 }
