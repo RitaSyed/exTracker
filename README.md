@@ -9,7 +9,7 @@
 #### Page view on load
 ![WebPage](https://raw.githubusercontent.com/RitaSyed/exTracker/master/screenshots/Page%20view%20on%20load.png)
 #### Page view when something is searched
-![WebPage]()
+![WebPage](https://raw.githubusercontent.com/RitaSyed/exTracker/master/screenshots/Page%20when%20something%20is%20searched.png)
 #### Page view when morning button is clicked
 ![WebPage](https://raw.githubusercontent.com/RitaSyed/exTracker/master/screenshots/Page%20view%20when%20morning%20button%20is%20clicked.png)
 
