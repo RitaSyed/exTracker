@@ -2,16 +2,16 @@
 
 ## Description
 1. Page lists an ex and all comprehensive list of all locations that the ex frequents.
-1. There is a search bar that on keypress filters locations cards.
+1. There is a search bar that on keypress filters locations cards. When text is deleted in the search bar, all cards show up again.
 1. There are 4 button options for "time of day." (Options: Morning, Afternoon, Evening, After Dark). These buttons filters the results down to each location that has a "Time That Ex Normally Goes" corresponding to the button clicked.There is a Show All button to unfilter the results.
 
 ## Screenshot
 #### Page view on load
-![WebPage]()
+![WebPage](https://raw.githubusercontent.com/RitaSyed/exTracker/master/screenshots/Page%20view%20on%20load.png)
 #### Page view when something is searched
 ![WebPage]()
 #### Page view when morning button is clicked
-![WebPage]()
+![WebPage](https://raw.githubusercontent.com/RitaSyed/exTracker/master/screenshots/Page%20view%20when%20morning%20button%20is%20clicked.png)
 
 
 ## Technologies Used:

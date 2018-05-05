@@ -8,13 +8,13 @@ const searchCards = (e) => {
   const input = $('.input-box').val();
   console.log(input);
   if (e.which === 13) {
-    $(`.thumbnail:not(:icontains(${input}))`).hide();
+    $(`.card:not(:icontains(${input}))`).hide();
     // function () {
     // $(this).toggle($(this).text().toLowerCase().indexOf(input) > -1);
     // });
   };
   if (input === '') {
-    console.log($(`.thumbnail`).show());
+    console.log($(`.card`).show());
   };
 };
 
