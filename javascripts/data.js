@@ -7,7 +7,6 @@ const whenLocationsLoad = (data) => {
   loadEx(whenExLoad, errorFunction);
   const locationsData = data.locations;
   dom.printLocations(locationsData);
-  // console.log('locationsdata', locationsData);
 };
 
 const whenExLoad = (data) => {
