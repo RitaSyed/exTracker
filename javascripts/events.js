@@ -8,8 +8,7 @@ const searchCards = (e) => {
   const input = $('.input-box').val();
   console.log(input);
   if (e.which === 13) {
-    console.log($(`.thumbnail:not(:icontains(${input}))`).hide());
-    // console.log($(`.thumbnail:not(:contains.toLowerCase()(${input}))`));
+    $(`.thumbnail:not(:icontains(${input}))`).hide();
     // function () {
     // $(this).toggle($(this).text().toLowerCase().indexOf(input) > -1);
     // });
@@ -19,8 +18,35 @@ const searchCards = (e) => {
   };
 };
 
+const buttonEvents = (e) => {
+  const btnLabel = $(e.target).text();
+  // $(`.card:not(:icontains(${btnLabel}))`).toggle();
+  $('.card').not(`:contains(${btnLabel})`).hide();
+  if (btnLabel === 'Show All') {
+    $(`.card`).show();
+  }
+  changeButtonText($(e.target));
+};
+
+const changeButtonText = (btnLabel) => {
+  console.log('btn', btnLabel);
+  btnLabel.text(() => {
+    let returnText = '';
+    if (btnLabel.text() !== 'Show All') {
+      returnText = 'Show All';
+      console.log(btnLabel);
+    } else {
+      const btnName = btnLabel.attr('btnName');
+      returnText = btnName;
+    }
+    return returnText;
+  });
+};
+
 const bindEvents = () => {
   $('.input-box').on('keyup', searchCards);
+  $('.btn-group').on('click', buttonEvents);
+
 };
 
 module.exports = bindEvents;
