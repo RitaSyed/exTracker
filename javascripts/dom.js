@@ -3,7 +3,6 @@ const printToDom = (domString, divId) => {
 };
 const printEx = (exArray) => {
   let domString = '';
-  // domString +=  `<div class="col-sm-6 col-md-4">`;
   domString +=    `<div class="thumbnail">`;
   domString +=      `<img src="${exArray.image}" alt="...">`;
   domString +=      `<div class="caption">`;
@@ -23,15 +22,14 @@ const printLocations = (locationsArray) => {
   console.log('locations');
   let domString = '';
   $(locationsArray).each((i, locationCard) => {
-    domString +=  `<div class="col-sm-6 col-md-4">`;
+    domString +=  `<div class="card col-sm-6 col-md-4">`;
     domString +=    `<div class="thumbnail">`;
-
     domString +=      `<img src="${locationCard.locationImg}" alt="...">`;
     domString +=      `<div class="caption">`;
-    domString +=        `<h3>where: ${locationCard.name}</h3>`;
-    domString +=        `<h3>when: ${locationCard.time}</h32>`;
+    domString +=        `<h3 class="search text-center">${locationCard.name}</h3>`;
+    domString +=        `<h34>when: ${locationCard.time}</h4>`;
     $(locationCard.locationAddress).each((i, locale) => {
-      domString +=        `<h3>No go: </h3><div>${locale}</div>`;
+      domString +=        `<h4 class="search"></h4><div>${locale}</div>`;
     });
     domString +=      `</div>`;
     domString +=    `</div>`;

@@ -3,12 +3,12 @@ body {
   padding-top: 80px;
 }
 
-
-#ex-card {
-  position: fixed;
-  z-index: 1;
+.thumbnail {
+  min-height: 440px;
 }
 
-.thumbnail {
-  min-height: 380px;
+.thumbnail a>img, .thumbnail>img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
 }
