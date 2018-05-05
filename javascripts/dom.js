@@ -28,10 +28,10 @@ const printLocations = (locationsArray) => {
 
     domString +=      `<img src="${locationCard.locationImg}" alt="...">`;
     domString +=      `<div class="caption">`;
-    domString +=        `<h3>where: ${locationCard.name}</h3>`;
+    domString +=        `<h3 class="search">where: ${locationCard.name}</h3>`;
     domString +=        `<h3>when: ${locationCard.time}</h32>`;
     $(locationCard.locationAddress).each((i, locale) => {
-      domString +=        `<h3>No go: </h3><div>${locale}</div>`;
+      domString +=        `<h3 class="search">No go: </h3><div>${locale}</div>`;
     });
     domString +=      `</div>`;
     domString +=    `</div>`;
