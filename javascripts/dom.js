@@ -4,10 +4,10 @@ const printToDom = (domString, divId) => {
 const printEx = (exsArray) => {
   let domString = '';
   $(exsArray).each((i, ex) => {
-    domString +=    `<div class="thumbnail">`;
+    domString +=    `<div class="thumbnail ex">`;
     domString +=      `<img src="${ex.image}" alt="...">`;
     domString +=      `<div class="caption">`;
-    domString +=        `<h3>name: ${ex.name}</h3>`;
+    domString +=        `<h3 class="exName">${ex.name}</h3>`;
     domString +=        `<h3>age: ${ex.age}</h3>`;
     $(ex.flaws).each((i, flaw) => {
       domString +=        `<p>${flaw}</p>`;

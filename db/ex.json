@@ -7,13 +7,13 @@
           "locations": [1, 3, 5, 10]
       },
       {   "image": "http://img.picturequotes.com/2/616/615489/this-is-my-ex-looking-for-someone-better-than-me-quote-1.jpg",
-          "name": "Fictional Ex",
+          "name": "Fictional",
           "age": 99,
           "flaws": ["Arrogant", "Blunt", "Dishonest", "Humourless", "Judgemental", "Naïve"],
           "locations": [2, 4, 6, 11]
       },
       {   "image": "http://img.picturequotes.com/2/616/615489/this-is-my-ex-looking-for-someone-better-than-me-quote-1.jpg",
-          "name": "Fictional Ex",
+          "name": "Ex",
           "age": 155,
           "flaws": ["Arrogant", "Blunt", "Dishonest", "Humourless", "Judgemental", "Naïve"],
           "locations": [7, 8, 9, 12]

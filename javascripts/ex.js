@@ -3,7 +3,7 @@ const loadEx = () => {
     $.get('/db/ex.json')
       .done((data) => {
         resolve(data.ex);
-        console.log('data.ex', data.ex);
+        // console.log('data.ex', data.ex);
       })
       .fail((err) => {
         reject(`got an error!`, err);

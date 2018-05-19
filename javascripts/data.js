@@ -24,11 +24,11 @@ const initializer = () => {
   loadEx().then((data) => {
     console.log(data);
     whenExLoad(data);
+    bindEvents();
   });
   loadLocations().then((data) => {
     whenLocationsLoad(data);
   });
-  bindEvents();
   // loadLocations(whenLocationsLoad, errorFunction);
 };
 
