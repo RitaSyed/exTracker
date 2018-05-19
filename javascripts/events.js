@@ -1,5 +1,6 @@
 const loadLocations = require('./locations.js');
 const loadEx = require('./ex.js');
+const dom = require('./dom.js');
 // const data = require('./data');
 jQuery.expr[':'].icontains = function (a, i, m) {
   return jQuery(a).text().toUpperCase()
@@ -48,36 +49,33 @@ const changeButtonText = (btnLabel) => {
 const viewOneEx = (e) => {
   console.log('one ex clicked');
   $('.ex').not($(e.target).closest('.ex')).hide();
-  // $(e.target).closest('.ex').addClass('currentEx');
-  const exId = $(e.currentTarget).find('.exName').text();
-  filterCurrentExLocatons(exId);
+  const exId = $(e.currentTarget).find('.exName').html();
+  allLocatonsAndCurrentEx(exId);
 };
-// const findOneEx = (id) => {
-//   return checkedItem.find(item => item.id === id);
-// };
-const filterCurrentExLocatons = (exId) => {
-  Promise.all([loadLocations(), loadEx(),])
-    .then((foodz) => {
-      const arrayF = foodF(foodz, exId);
-      getMatchingLocations(arrayF, foodz[0]);
-      console.log(getMatchingLocations(arrayF, foodz[0]));
-    });
-};
-const foodF = (foodz, exId) => {
 
-  foodz[1].forEach((ex) => {
-    console.log('foodz', ex.name);
-    console.log('exId', exId);
-    if (exId === ex.name) {
-      return ex;
-    }
+const allLocatonsAndCurrentEx = (exId) => {
+  let locations = [];
+  let currentEx = [];
+  loadLocations().then((locale) => {
+    locations = [...locale,];
+    loadEx().then((ex) => {
+      const matching = ex.filter((selectedEx) => {
+        if (exId === selectedEx.name) {
+          return true;
+        };
+        return false;
+      });
+      currentEx = matching[0];
+      dom.printLocations(getMatchingLocations(currentEx, locations));
+    });
   });
 };
 
 const getMatchingLocations = (array, locations) => {
+  const newarr = array.locations;
   let matchingLocations = [];
   matchingLocations = locations.filter((locale) => {
-    return array.includes(locale.locationId);
+    return newarr.includes(locale.locationId);
   });
   return matchingLocations;
 };
