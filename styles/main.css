@@ -12,3 +12,7 @@ body {
   height: 260px;
   object-fit: cover;
 }
+.ex.thumbnail>img{
+  width: 100%;
+  height: 100%;
+}

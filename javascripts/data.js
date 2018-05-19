@@ -11,7 +11,6 @@ const whenLocationsLoad = (data) => {
 
 const whenExLoad = (data) => {
   // const exData = data.ex;
-  console.log('whenExloads', data);
   dom.printEx(data);
 
 };
@@ -22,14 +21,12 @@ const whenExLoad = (data) => {
 
 const initializer = () => {
   loadEx().then((data) => {
-    console.log(data);
     whenExLoad(data);
     bindEvents();
   });
   loadLocations().then((data) => {
     whenLocationsLoad(data);
   });
-  // loadLocations(whenLocationsLoad, errorFunction);
 };
 
 module.exports = initializer;

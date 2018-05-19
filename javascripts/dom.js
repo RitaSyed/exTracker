@@ -21,7 +21,6 @@ const printEx = (exsArray) => {
 };
 
 const printLocations = (locationsArray) => {
-  console.log('locations');
   let domString = '';
   $(locationsArray).each((i, locationCard) => {
     domString +=  `<div class="card col-sm-6 col-md-4">`;
