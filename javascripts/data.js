@@ -4,23 +4,32 @@ const dom = require('./dom.js');
 const bindEvents = require('./events.js');
 
 const whenLocationsLoad = (data) => {
-  loadEx(whenExLoad, errorFunction);
-  const locationsData = data.locations;
-  dom.printLocations(locationsData);
+  // loadEx(whenExLoad, errorFunction);
+  // const locationsData = data.locations;
+  dom.printLocations(data);
 };
 
 const whenExLoad = (data) => {
-  const exData = data.ex;
-  dom.printEx(exData);
-  bindEvents();
+  // const exData = data.ex;
+  console.log('whenExloads', data);
+  dom.printEx(data);
+
 };
 
-const errorFunction = () => {
-  console.error('stuff broke');
-};
+// const errorFunction = () => {
+//   console.error('stuff broke');
+// };
 
 const initializer = () => {
-  loadLocations(whenLocationsLoad, errorFunction);
+  loadEx().then((data) => {
+    console.log(data);
+    whenExLoad(data);
+    bindEvents();
+  });
+  loadLocations().then((data) => {
+    whenLocationsLoad(data);
+  });
+  // loadLocations(whenLocationsLoad, errorFunction);
 };
 
 module.exports = initializer;
